@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de autonomia de viagem</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Calculadora de autonomia de viagem</h1>
+            <form action="#">
+            <div class="form-group">
+                <label for="viagem">Viagem</label>
+                <input type="text" class="form-control" id="viagem">
+            </div>
+            <div class="form-group">
+                <label for="km">Km percorridos</label>
+                <input type="number" class="form-control" id="km">
+            </div>
+            <div class="form-group">
+                <label for="litros">Litros de combustível</label>
+                <input type="number" class="form-control" id="litros">
+            </div>
+            <div class="form-group">
+                <label for="valor">Valor do litro</label>
+                <input type="number" class="form-control" id="valor">
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular</button>
+            </form>
+            <div class="resultados">
+            <h2>Resultados</h2>
+            <p>Em sua viagem para <span id="viagem-resultado"></span>
+                você percorreu <span id="km-percorridos-resultado"></span> km e gastou
+                <span id="litros-gastos-resultado"></span> litros de combustível.
+            </p>
+            <p>Seu carro fez <span id="km-por-litro-resultado"></span> km/l e sua viagem teve um custo de
+                <span id="custo-viagem-resultado"></span> reais, sendo <span id="custo-por-km-resultado"></span> reais por
+                km.
+            </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
+

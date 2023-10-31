@@ -1,65 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@600&display=swap');
 
-*{
-margin: 0;
-padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url(./assets/florestas-e-vegetacao-rodoviaria-bela-paisagem.jpg);
-    background-position: center;
-    font-family: 'Gabarito', sans-serif;
+  background-image: url(./assets/florestas-e-vegetacao-rodoviaria-bela-paisagem.jpg);
+  background-position: center;
+  font-family: 'Gabarito', sans-serif;
 }
 
 .container {
-    margin: 0 auto;
-    width: 700px;
-    padding: 30px;
-    background-color: rgb(255, 255, 255);
-    
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  form {
-    width: 100%;
-  }
-  
-  .form-group {
-    margin-bottom: 10px;
-  }
-  
-  .form-control {
-    width: 96.5%;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 100%; 
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #48c2a9;
+  color: rgb(44, 44, 44);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Gabarito', sans-serif;
+  cursor: pointer;
+  width: 100%; /
+}
+
+.resultados {
+  display: none;
+}
+
+.resultados h2 {
+  text-align: center;
+}
+
+.resultados p {
+  text-align: center;
+}
+
+.resultados span {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+  .form-control,
   .btn {
     width: 100%;
-    background-color: #48c2a9;
-    color: rgb(44, 44, 44);
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 10px;
-    font-family: 'Gabarito', sans-serif;
-    cursor: pointer;
   }
-  
-  .resultados {
-    display: none;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .container {
+    max-width: 600px; 
   }
-  
-  .resultados h2 {
-    text-align: center;
+}
+
+@media (min-width: 901px) {
+  .container {
+    max-width: 900px; 
   }
-  
-  .resultados p {
-    text-align: center;
-  }
-  
-  .resultados span {
-    font-weight: bold;
-  }
+}
